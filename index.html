@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+
+
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <br></br>
+
+        <!-- Below code is used to take values from user i.e Bill Amount, Tip Percentage, No. of People -->
+
+        <pre><b>Bill Amount:    </b><input id="bill-amount" type="number" min="0" placeholder="0" oninput="this.value = Math.abs(this.value)"></pre>
+        <br></br>
+        
+        <pre><b>Tip Percentage:  </b><input id="tip-percentage" type="number" min="0" placeholder="0" oninput="this.value = Math.abs(this.value)"></pre>
+        <br></br>
+
+    <pre><b>No. of People:   </b><input id="no-people" type="number" min="1" oninput="validity.valid||(value='');" ></pre>
+   
+    <br></br>
+    <!--Defining a clickable Button -->
+    
+        <button id="btn">Calculate</button>
+    </div>
+    <br></br>
+    <!-- below code will display Tip Per Person and Total Bill Per Person -->
+    <div id ="container2">
+    <p><b>Tip Per Person   : </b><br>
+    <span id = "tip-amount"></span>
+    
+    </p>
+
+    <p><b>Total Bill Per Person  : </b><br>
+        <span id = "total-bill" ></span>
+        </p>
+    </div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>      
